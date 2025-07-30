@@ -1,0 +1,22 @@
+@theme static {
+  /* Font family utilities like font-sans */
+  --font-*: initial;
+  --color-*: initial;
+
+  --font-navigation: "Inter", sans-serif;
+  --font-paragraph: "Inter", sans-serif;
+
+  --font-sans: "Inter", sans-serif;
+
+  --color-soft-orange: hsl(36, 77%, 62%);
+  --color-soft-red: hsl(5, 85%, 63%);
+  --color-off-white: hsl(36, 100%, 99%);
+  --color-grayfish-blue: hsl(233, 8%, 79%);
+  --color-dark-grayfish-blue: hsl(236, 13%, 42%);
+  --color-very-dark-blue: hsl(240, 100%, 5%);
+
+  --color-heading: hsl(0, 0%, 95%);
+  --color-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-white: #FFFFFF;
+  --color-transparent: transparent;
+}

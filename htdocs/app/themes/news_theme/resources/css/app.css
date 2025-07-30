@@ -1,0 +1,12 @@
+@import "tailwindcss" theme(static);
+
+@source "../views/";
+@source "../../app/";
+@import "./theme.css";
+@import "./blocks/index.css";
+@import "./fonts.css";
+
+/*@theme {*/
+/*  --font-sans: "Inter", sans-serif;*/
+/*}*/
+

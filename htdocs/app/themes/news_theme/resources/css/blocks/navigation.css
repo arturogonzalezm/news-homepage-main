@@ -1,0 +1,56 @@
+@layer components {
+  /* Main navigation container: logo + links */
+  .navigation {
+    @apply flex items-center justify-between max-w-6xl mx-auto px-6 py-6;
+    background-color: transparent;
+  }
+
+  /* Logo element (e.g. W.) */
+  .navigation .logo {
+    @apply text-2xl font-bold; /* adjust size as needed */
+    color: #111827;
+  }
+
+  /* Link list wrapper */
+  .nav-menu {
+    @apply flex items-center space-x-8;
+  }
+
+  /* Individual link styles */
+  .nav-item {
+    @apply text-sm font-medium transition-colors duration-150;
+    color: #6B7280; /* Tailwind gray-500 */
+  }
+  .nav-item:hover {
+    color: #111827; /* Tailwind gray-900 for hover */
+  }
+
+  /* Active/current page link */
+  .nav-item-active {
+    @apply font-semibold;
+    color: #111827;
+    /* optional underline indicator */
+    border-bottom: 2px solid #111827;
+    padding-bottom: 2px;
+  }
+
+  /* Mobile: collapse links into menu toggle */
+  .navigation-mobile {
+    @apply flex items-center justify-between px-4 py-3 md:hidden;
+  }
+  .navigation-mobile .logo {
+    @apply text-2xl font-bold;
+    color: #111827;
+  }
+  .nav-toggle {
+    @apply block text-xl; /* hamburger icon size */
+    color: #6B7280;
+    transition: color 0.15s;
+  }
+  .nav-toggle:hover {
+    color: #111827;
+  }
+  .nav-menu-mobile {
+    @apply hidden; /* show via JS when toggled */
+  }
+}
